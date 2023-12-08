@@ -1,0 +1,90 @@
+*{
+background-color: rgb(250	238	221);
+}
+
+.logo img{
+    left: 0;
+    top: 0;
+    width: 170px;
+    height: 170px;
+    object-fit: contain;
+}
+
+.logo a{
+   font-family: Courier;
+    color: #4C2F27;
+    font-size: 30px;
+    text-decoration: none;
+    font-style: bold;
+}
+
+h2 {
+    font-family: "RalewayRegular";
+    color: #4C2F27;
+    font-size: 50px;
+    text-align: center;
+  }
+
+
+.navig ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: #f1f1f1;
+}
+
+.navig li a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    flex-direction: row;
+}
+
+/* Change the link color on hover */
+li a:hover {
+    background-color: #555;
+    color: white;
+}
+
+
+
+.container {
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  flex-direction: row;
+  width: 50%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: auto;
+  width: 50%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #6F4F28;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: brown;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
